@@ -56,7 +56,7 @@ function dfsCycleDetection(graphComponentMatrix, srcr, srcc, visited, dfsVisited
         let [nbrr, nbrc] = graphComponentMatrix[srcr][srcc][children];
         if (visited[nbrr][nbrc] === false) {
             let response = dfsCycleDetection(graphComponentMatrix, nbrr, nbrc, visited, dfsVisited);
-            if (response === true) return true; // Found cycle so return immediately, no need to explore more path
+            if (response === true) return true; //if found cycle so return immediately, no need to explore more path
         }
         else if (visited[nbrr][nbrc] === true && dfsVisited[nbrr][nbrc] === true) {
             // Found cycle so return immediately, no need to explore more path
