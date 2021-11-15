@@ -29,7 +29,7 @@ let sheetDB = [];
 // }
 
 
-// Selectors for cell properties
+// Selectors for cell propertiess
 let bold = document.querySelector(".bold");
 let italic = document.querySelector(".italic");
 let underline = document.querySelector(".underline");
